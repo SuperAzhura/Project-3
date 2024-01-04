@@ -46,12 +46,7 @@ function calculate() {
 }
 
 function setOperation(operation) {
-    // Implement this function to set the operation
-    // For example, you can store the operation in a variable
-    // or update the display to show the selected operation
-}
 
-// Use a variable to store the expression
 let expression = '';
 
 function appendToDisplay(value) {
@@ -93,7 +88,7 @@ function calculateResult() {
             }
 
             document.getElementById('display').value = result;
-            expression = result.toString(); // Store the result for further calculations
+            expression = result.toString();
         } else {
             throw new Error('Invalid expression');
         }
